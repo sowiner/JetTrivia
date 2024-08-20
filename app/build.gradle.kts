@@ -72,5 +72,9 @@ dependencies {
 
     // add
     implementation(libs.hilt.android)
+//    implementation(libs.hilt.compiler)
+    implementation(libs.hilt.navigation)
     ksp(libs.hilt.compiler)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gson)
 }
