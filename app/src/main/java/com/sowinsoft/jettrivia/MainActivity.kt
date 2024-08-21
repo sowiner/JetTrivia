@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MainScreen { modifier, viewModel ->
+            MainScreen { modifier, viewModel->
                 QuestionSection(modifier = modifier, viewModel = viewModel)
             }
         }
@@ -27,8 +27,7 @@ class MainActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    MainScreen { modifier, viewModel ->
+    MainScreen { modifier, viewModel->
         QuestionSection(modifier = modifier, viewModel = viewModel)
-
     }
 }

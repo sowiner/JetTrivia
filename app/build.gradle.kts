@@ -1,4 +1,5 @@
 plugins {
+    alias(libs.plugins.compose.compiler)
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     // add
@@ -8,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.sowinsoft.jettrivia"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.sowinsoft.jettrivia"
